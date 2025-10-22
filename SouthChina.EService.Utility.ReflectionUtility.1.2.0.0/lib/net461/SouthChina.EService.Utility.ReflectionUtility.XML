@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SouthChina.EService.Utility.ReflectionUtility</name>
+    </assembly>
+    <members>
+        <member name="T:SouthChina.EService.Utility.PropertyAccessValue`1">
+            <summary>
+            使用反射快速存取Propert值的類別
+            </summary>
+            <typeparam name="T">要存取值的型別</typeparam>
+        </member>
+        <member name="M:SouthChina.EService.Utility.PropertyAccessValue`1.GetValue(`0,System.String)">
+            <summary>
+            取得屬性值
+            </summary>
+            <param name="instance">Instance</param>
+            <param name="memberName">屬性名稱</param>
+            <returns>取得的值</returns>
+        </member>
+        <member name="M:SouthChina.EService.Utility.PropertyAccessValue`1.SetValue(`0,System.String,System.Object)">
+            <summary>
+            設定屬性值
+            </summary>
+            <param name="instance">Instance</param>
+            <param name="memberName">屬性名稱</param>
+            <param name="newValue">要設定的值</param>
+        </member>
+        <member name="M:SouthChina.EService.Utility.PropertyAccessValue`1.GetValue(System.Object,System.String)">
+            <summary>
+            取得屬性值
+            </summary>
+            <param name="instance">Instance</param>
+            <param name="memberName">屬性名稱</param>
+            <returns>取得的值</returns>
+        </member>
+        <member name="M:SouthChina.EService.Utility.PropertyAccessValue`1.SetValue(System.Object,System.String,System.Object)">
+            <summary>
+            設定屬性值
+            </summary>
+            <param name="instance">Instance</param>
+            <param name="memberName">屬性名稱</param>
+            <param name="newValue">要設定的值</param>
+        </member>
+        <member name="M:SouthChina.EService.Utility.PropertyAccessValue`1.#cctor">
+            <summary>
+            建構子，初始化時會準備存取屬性的func及action
+            </summary>
+        </member>
+        <member name="M:SouthChina.EService.Utility.PropertyAccessValue`1.GenerateGetValue">
+            <summary>
+            產生取得屬性的func
+            </summary>
+            <returns>Func</returns>
+        </member>
+        <member name="M:SouthChina.EService.Utility.PropertyAccessValue`1.GenerateSetValue">
+            <summary>
+            產生設定屬性的action
+            </summary>
+            <returns>Action</returns>
+        </member>
+    </members>
+</doc>
